@@ -1,8 +1,8 @@
 package lins.com.mygreendao;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.FragmentManager;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         initView();
         initData();
+
     }
 
     private void initView() {
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void insertUser(Long id, String name) {
         UserDao userDao = GreenDaoManager.getInstance().getSession().getUserDao();
-        User user = new User(id, name);
+        User user = new User(id, name,"aa");
         userDao.insert(user);
         //mNameET.setText("");
 
@@ -106,6 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int viewId = v.getId();
         switch (viewId){
             case R.id.btn_add:
+                Toast.makeText(MainActivity.this, "sss", Toast.LENGTH_SHORT).show();
                 insertUser(null, mNameET.getText().toString());
                 break;
 
