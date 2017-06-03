@@ -1,6 +1,5 @@
 package lins.com.mygreendao;
 
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -109,9 +108,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_add:
                 Toast.makeText(MainActivity.this, "sss", Toast.LENGTH_SHORT).show();
                 insertUser(null, mNameET.getText().toString());
-                break;
-
-            default:
                 break;
         }
     }

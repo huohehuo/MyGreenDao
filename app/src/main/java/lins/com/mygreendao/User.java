@@ -7,6 +7,7 @@ import org.greenrobot.greendao.annotation.Generated;
 
 /**
  * Created by LINS on 2017/3/7.
+ * 此处只要加了Entity这些注解，项目中的gen文件夹就会自动生成，并生成相应的类（仅此为自动生成）
  */
 
 @Entity//添加这个注解，用于让GreenDao识别

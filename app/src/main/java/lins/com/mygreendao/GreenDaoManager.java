@@ -5,6 +5,7 @@ import lins.com.mygreendao.gen.DaoSession;
 
 /**
  * Created by LINS on 2017/3/7.
+ * 用于管理数据库操作对象的类
  */
 
 public class GreenDaoManager {
